@@ -9,7 +9,7 @@ Rails.application.routes.draw do
   resources :relationships, only: [:create, :destroy]
   resources :posts
 
-  root 'pages#index'
+  root 'pages#explore'
   get '/home' => 'pages#home'
   get '/user/:id' => 'pages#profile'
   get '/explore' => 'pages#explore'
